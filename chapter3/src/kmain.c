@@ -15,7 +15,7 @@ static void trigger_de(void) {
 void _main(const void* mbi, unsigned int magic){
     (void)mbi; (void)magic;
     clear();
-    puts("NecrOS starting...\n");
+    puts("MicrOS starting...\n");
 
     gdt_init();
     puts("GDT installed\n");

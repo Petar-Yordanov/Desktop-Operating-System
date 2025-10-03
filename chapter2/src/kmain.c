@@ -1,4 +1,4 @@
-#include <stdint.h>
+#include "types.h"
 
 static volatile uint16_t* const VGA = (uint16_t*)0xB8000;
 static const int COLS = 80, ROWS = 25;
@@ -17,6 +17,6 @@ static void vga_print_at(int row, int col, const char* s){
 void _main(const void* mbi, unsigned int magic){
     (void)mbi; (void)magic;
     vga_clear();
-    vga_print_at(0, 0, "Hello World from NecrOS");
+    vga_print_at(0, 0, "Hello World from MicrOS");
     for(;;) __asm__ __volatile__("cli; hlt");
 }

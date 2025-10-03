@@ -1,7 +1,7 @@
 CC      = gcc
 AS      = nasm
 LD      = ld
-ISO     = NecrOS.iso
+ISO     = MicrOS.iso
 
 CFLAGS  = -m32 -ffreestanding -fno-builtin -fno-stack-protector \
           -O2 -Wall -Wextra \
